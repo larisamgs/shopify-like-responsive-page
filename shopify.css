@@ -1,0 +1,292 @@
+body {
+  background-color: #d0cfd4;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 2rem;
+  padding: 1rem;
+  background-color: white;
+  color: #535254;
+  line-height: 1.6;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+}
+
+a {
+  text-decoration: none;
+  color: #535254;
+  font-size: small;
+  border: none;
+  background-color: white;
+}
+
+h1,
+h2 {
+  color: #3e3e3f;
+}
+
+nav,
+#nav-left-side,
+#logo,
+#nav-right-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#left-menu,
+#links-nav-right-side,
+#article-img {
+  display: none;
+}
+
+nav {
+  font-size: small;
+}
+
+nav #logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+#name-logo {
+  height: 1.5rem;
+}
+
+#img-logo {
+  height: 3rem;
+}
+
+#hamburger-menu {
+  font-weight: bolder;
+}
+
+.get-started-btn {
+  border-radius: 5px;
+  background-color: #625ec6;
+  color: white;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: none;
+  font-weight: bold;
+  font-size: small;
+}
+
+main > p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#main-get-started-btn {
+  display: flex;
+  flex-direction: column;
+}
+
+#main-get-started-btn input[type="email"] {
+  max-width: 100%;
+  border-radius: 5px;
+  padding: 10px 15px;
+  border: 1px solid #625ec6;
+  margin-bottom: 0.5rem;
+  font-size: small;
+}
+
+section {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+figure {
+  margin: 0;
+  position: relative;
+}
+
+figure > img {
+  max-width: 100%;
+}
+
+figure > button {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.span-arrow {
+  font-weight: bolder;
+  font-size: large;
+}
+
+#img-right-btn {
+  right: 1.5rem;
+  bottom: 2rem;
+}
+
+#img-left-btn {
+  right: 3.2rem;
+  bottom: 2rem;
+}
+
+#img-right-btn:hover,
+#img-left-btn:hover {
+  background-color: #d0cfd4;
+}
+
+figcaption {
+  position: absolute;
+  left: 1.5rem;
+  bottom: 2rem;
+  color: white;
+}
+
+#start-selling-btn {
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #625ec6;
+  border: 3px solid #625ec6;
+  background-color: white;
+  font-size: small;
+}
+
+#article-info {
+  text-align: center;
+}
+
+#article-info > p > a {
+  text-decoration: underline;
+  color: #625ec6;
+}
+
+@media screen and (max-width: 576px) {
+  figure > button {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .span-arrow {
+    font-weight: bold;
+    font-size: small;
+  }
+
+  #img-right-btn {
+    right: 0.5rem;
+  }
+
+  #img-left-btn {
+    right: 1.7rem;
+  }
+
+  figcaption {
+    font-size: xx-small;
+    left: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  #main-get-started-btn {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #main-get-started-btn input[type="email"] {
+    margin-bottom: 0;
+    margin-right: 0.5rem;
+  }
+
+  #main-get-started-btn button {
+    align-self: stretch;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #main-get-started-btn {
+    flex-direction: row;
+  }
+  #left-menu,
+  article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #left-menu a,
+  #links-nav-right-side a {
+    margin-right: 0.5rem;
+    font-size: smaller;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+  #links-nav-right-side {
+    display: block;
+  }
+
+  #article-info {
+    display: inline-block;
+    width: 40%;
+    text-align: start;
+  }
+  #article-img {
+    width: 40%;
+    display: inline-block;
+    margin-left: 1rem;
+  }
+
+  #article-img > img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #container,
+  a,
+  nav,
+  #links-nav-right-side a,
+  #left-menu a,
+  .get-started-btn,
+  #main-get-started-btn input[type="email"],
+  #start-selling-btn {
+    font-size: medium;
+  }
+
+  nav #logo {
+    margin-right: 1rem;
+  }
+
+  #name-logo {
+    height: 2rem;
+  }
+
+  #img-logo {
+    height: 4rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #img-right-btn {
+    right: 6rem;
+  }
+
+  #img-left-btn {
+    right: 8rem;
+  }
+
+  figcaption {
+    left: 6rem;
+  }
+}
